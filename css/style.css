@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+body{
+    background-image: url(../images/bg-pattern-top-desktop.svg),url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: 5px -5px, 520px 150px;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    color:#551e50;
+    margin-left: 120px;
+    margin-top: 100px;
+}
+.text-content {
+    width: 50%;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    background-color: #f7f2f8;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 12px;
+}
+.rating-2{
+    margin-left: 50px;
+    
+}
+.rating-3{
+    margin-left: 100px;
+}
+.stars img{
+    margin-right: 5px;
+}
+main{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.cards{
+    background-color: #551e50;
+    color: #ffffff;
+    width: 350px;
+    max-height: 210px;
+    border-radius: 10px;
+    padding: 30px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.person{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.person img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.person-action {
+    color: #8e3970;
+    margin-top: 2px;
+}
+.card-2{
+    margin-top: 40px;
+}
+.card-3{
+    margin-top: 80px;
+}
+@media (max-width: 600px){
+    header,main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .text-content {
+        margin-top: 20px;
+        width: 60%;
+    }
+    .rating{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .cards {
+        width: 85%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .card-1,.card-2,.card-3 {
+        margin-top: 10px;
+    }
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+    }
+}
